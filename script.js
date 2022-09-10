@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function () {
   $(".nama").click(function () {
     alert("hai namamu adalah " + $(this).html() + "!");
   });
