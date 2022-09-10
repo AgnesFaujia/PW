@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Agnes Faujia</title>
+	<link rel="stylesheet" type="text/css" href="stylees.css">
+</head>
+<body>
+	<img src="wa 1.jpeg">
+	<p class="name">Agnes Faujia</p>
+	<h1 class="title">The Top 5 of My Best Friends</h1>
+	<table align="center" border="1">
+		<tr>
+			<th colspan="5">Top 5 of my Bestie</th>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td class="nama">Faujia</td>
+			<td class="alamat">Cirebon</td>
+			<td><button class="change">Edit</button>
+				<button class="remove">Hapus</button></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td class="nama">Ninda Siti Paridah</td>
+			<td class="alamat">Ciamis</td>
+			<td><button class="change">Edit</button>
+				<button class="remove">Hapus</button></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td class="nama">Nina Wahyunisari</td>
+			<td class="alamat">Kuningan</td>
+			<td><button class="change">Edit</button>
+				<button class="remove">Hapus</button></td>
+		</tr>
+		<tr>
+			<td>4</td>
+		 	<td class="nama">Umi lathifah</td>
+			<td class="alamat">Yogyakarta</td>
+			<td><button class="change">Edit</button>
+				<button class="remove">Hapus</button></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td class="nama">Putri Salsabila</td>
+			<td class="alamat">Cirebon</td>
+			<td><button class="change">Edit</button>
+				<button class="remove">Hapus</button></td>
+		</tr>
+</table>
+<script src="script.js">
+$(document).ready(() => {
+	alert("ok!")
+  $(".nama").click(function () {
+    alert("hai namamu adalah " + $(this).html() + "!");
+  });
+  $(".alamat").click(function (event) {
+    alert(`Alamatmu di ` + $(this).html());
+  });
+
+  // GET BUTTON
+  //to the hapus
+  $(".remove").click(function () {
+    const res = confirm("Yakin  mau diremove ?!");
+    if (!res) return;
+    alert("Tapi ngga bisa hihihi");
+  });
+  //ini buat edit
+  $(".change").click(function () {
+    const res = confirm("Yakin mau diedit ?!");
+    if (!res) return;
+    alert("sorry to say, anda siapa?");
+  });
+});	
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+</html>

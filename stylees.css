@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+body{
+	background-color: #ECC5FB;
+	text-align: center;
+
+
+}
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 8px 20px;
+	text-align: center;
+}
+th{
+	background-color: #F07DEA;
+	font-size: 2em;
+}
+td{
+	background-color: #BFACE0;
+}
+
+img{
+	width: 7cm;
+	height: 7cm;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 1px 1px 4px pink;
+	padding: 5px;
+	background: white;
+	margin: 15px;
+	transition: 0.2s;
+	opacity: 75%;
+}
+.name{
+	font-size: 2em;
+	font-weight: bold;
+}
